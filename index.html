@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2wayPad</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="hamburgerContainer">
+                <i class="fa-solid fa-x fa-xl hamburgerIcon">
+                   
+                </i>
+            </div>
+            <div class="toolsContainer">
+
+            <div class="pencilSvgContainer">
+                <img class="toolsSize pencilSvg" src="./assets/pencil-svgrepo-com.svg" alt="pencils.svg">
+                <div class="pencilSizeContainer">
+                    <input type="range" id="pencilSize" name="points" min="1" max="10" value="3">
+                 </div>
+                <div class="pencilColorContainer">
+                    <div id="blue"></div>
+                    <div id="black"></div>
+                    <div id="yellow"></div>
+                    <div id="red"></div>
+                </div>
+            </div>
+
+            <div class="eraserSvgContainer">
+                <img class="toolsSize eraserSvg" src="./assets/eraser-3-svgrepo-com.svg" alt="eraser.svg">
+                <div class="eraserSizeContainer">
+                    <input type="range" id="eraserSize" name="points" min="1" max="10" value="3">
+                </div>
+            </div>
+            <img class="toolsSize stickySvg" src="./assets/sticky-note-svgrepo-com.svg" alt="sticky.svg">
+                <img class="toolsSize downloadSvg" src="./assets/download-svgrepo-com.svg" alt="download.svg">
+                <img class="toolsSize uploadSvg" src="./assets/upload-svgrepo-com.svg" alt="upload.svg">
+                <img class="toolsSize redoSvg" src="./assets/redo-svgrepo-com.svg" alt="redo.svg">
+                <img class="toolsSize undoSvg" src="./assets/undo-svgrepo-com.svg" alt="undo.svg">
+            </div>
+        </div>
+
+    </div>
+    <canvas></canvas>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>

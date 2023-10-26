@@ -1,0 +1,190 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+    max-width: 100vw;
+    max-height: 100vh;
+    
+}
+.container{
+    width: 100vw;
+    height: 85vh;
+    background-color: red;
+
+}
+.headerContainer{
+    width: 100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.hamburgerContainer{
+    height:100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+}
+.hamburgerIcon{
+   background-color: #dfe4ea;
+   padding: 18px;
+   padding-top: 27px;
+   padding-bottom: 27px;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+   justify-self: center;
+}
+.toolsContainer{
+    width: 55%;
+    height: 100%;
+    background-color: rgb(219, 220, 239);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    animation: center-animate  1s ease;
+    z-index: 100;
+
+
+}
+@keyframes center-animate {
+    0% {
+        transform: scaleX(0.1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+.toolsSize{
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+.toolsSize:active{
+    height:25px;
+    width:25px;
+}
+.pencilSvgContainer{
+    height: 100px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.pencilSizeContainer{
+display: none;
+    position: absolute;
+    bottom: -45px;
+    background-color: rgb(40, 39, 44);
+    padding: 10px;
+
+    
+}
+
+.pencilColorContainer{
+    display: none;
+    position: absolute;
+    bottom: -105px;
+    /* left: 0px; */
+    background-color: rgb(51, 50, 53);
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* display: flex; */
+    justify-content: space-between;
+    width: 100%;
+    width: 133px;
+    height: auto;
+}
+#blue{
+    width: 25px;
+    height:25px;
+    background-color: blue;
+    border-radius: 100%;
+}
+#black{
+    width: 25px;
+    height:25px;
+    background-color: black;
+    border-radius: 100%;
+}
+#yellow{
+    width: 25px;
+    height:25px;
+    background-color: yellow;
+    border-radius: 100%;
+}
+#red{
+    width: 25px;
+    height:25px;
+    background-color: red;
+    border-radius: 100%;
+}
+.eraserSvgContainer{
+    height: 100px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.eraserSizeContainer{
+display: none;
+    position: absolute;
+    bottom: -45px;
+    background-color: rgb(3, 33, 34);
+    padding: 10px;
+
+    
+}
+.stickyNote{
+    height: 240px;
+    width: 200px;
+    position: absolute;
+    left:40px
+}
+.stickyNoteHeader{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(202, 210, 210);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.stickyNoteHeaderMinimize{
+    height: 50%;
+    width: 23px;
+    background-color: blueviolet;
+    border-radius: 65px;
+    margin-right: 10px;
+    border: none;
+}
+.stickyNoteHeaderCut{
+    height: 50%;
+    width: 23px;
+    background-color: rgb(173, 0, 104);
+    border-radius: 60px;
+    margin-right: 10px;
+    border:none
+}
+.stickyNoteInput{
+    height: 80%;
+    width: 100%;
+    padding: 0px;
+    color: black;
+    border: none;
+    outline: none;
+    /* background-color: black; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
